@@ -9,9 +9,9 @@ L.swift supports comma-separated keys.
 
 |Key|L.swift|
 |:---:|:---:|
-|`"One"`|`NSLocalizedString(L.one, comment: "")`|
-|`"One.Two"`|`NSLocalizedString(L.One.two, comment: "")`|
-|`"One.Two.Three"`|`NSLocalizedString(L.One.Two.three, comment: "")`|
+|`"One"`|`L.one (return NSLocalizedString("One", comment: "")`|
+|`"One.Two"`|`L.One.two (return NSLocalizedString("L.One.Two", comment: "")`|
+|`"One.Two.Three"`|`L.One.Two.three (return NSLocalizedString("L.One.Two.Three", comment: "")`|
 
 ## Installation
 
