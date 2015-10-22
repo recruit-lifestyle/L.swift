@@ -74,7 +74,13 @@ private func main(arguments: [String]) {
     // write file if we have changes
     let fileName = "L.generated.swift"
     let fileURL = directory.URLByAppendingPathComponent(fileName)
-    let contents = root.description
+    let imports = [
+        "import Foundation"
+    ].joinWithSeparator("\n")
+    let contents = [
+        imports,
+        root.description
+    ].joinWithSeparator("\n\n")
     // compare with existing
     let fileContents: String
     do {
