@@ -1,4 +1,8 @@
 # L.swift
+![Pod Version](https://img.shields.io/cocoapods/v/L.swift.svg?style=flat)
+![Pod License](https://img.shields.io/cocoapods/l/L.swift.svg?style=flat)
+![Pod Platform](https://img.shields.io/cocoapods/p/L.swift.svg?style=flat)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 Command line tool to get strong typed, autocompleted localized strings in Swift, inspired by [R.swift](https://github.com/mac-cain13/R.swift).
 
