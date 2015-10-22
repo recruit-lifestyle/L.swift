@@ -103,7 +103,7 @@ internal class Leaf {
     }
     
     func description(depth: Int = 0) -> String {
-        return "static let \(name) = \"\(key)\"".withSpaces(depth)
+        return "static let \(name) = NSLocalizedString(\"\(key)\", comment: \"\")".withSpaces(depth)
     }
 }
 
