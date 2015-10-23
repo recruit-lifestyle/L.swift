@@ -8,21 +8,21 @@ Command line tool to get strong typed, autocompleted localized strings in Swift,
 ## Usage
 After installing L.swift into your project you can use the L-struct to access localized strings. If the struct is outdated just build and L.swift will correct any missing/changed/added resources.
 
-L.swift supports comma-separated keys.
+L.swift supports dot-separated keys.
 
 |Key|L.swift|
 |:---:|:---:|
 |`"One"`|`L.one (return NSLocalizedString("One", comment: "")`|
-|`"One.Two"`|`L.One.two (return NSLocalizedString("L.One.Two", comment: "")`|
-|`"One.Two.Three"`|`L.One.Two.three (return NSLocalizedString("L.One.Two.Three", comment: "")`|
+|`"One.Two"`|`L.One.two (return NSLocalizedString("One.Two", comment: "")`|
+|`"One.Two.Three"`|`L.One.Two.three (return NSLocalizedString("One.Two.Three", comment: "")`|
 
 ## Installation
 
 ### CocoaPods
 1. Add `pod 'L.swift'` to your Podfile and run `pod install`
 2. In XCode: Click on your project in the file list, choose your target under `TARGETS`, click the `Build Phases` tab and add a `New Run Script Phase` by clicking the little plus icon in the top left
-3. Drag the new `Run Script` phase above the `Compile Sources` phase and below `Check Pods Manifest.lock`, expand it and paste the following script: ``"$PODS_ROOT/L.swift/lswift" "$SRCROOT"`
-4. Build your project, in Finder you will now see a L.generated.swift in the $SRCROOT-folder, drag the L.generated.swift files into your project and uncheck Copy items if needed
+3. Drag the new `Run Script` phase above the `Compile Sources` phase and below `Check Pods Manifest.lock`, expand it and paste the following script: `"$PODS_ROOT/L.swift/lswift" "$SRCROOT"`
+4. Build your project, in Finder you will now see a `L.generated.swift` in the $SRCROOT-folder, drag the `L.generated.swift` file into your project and uncheck `Copy items if needed`
 
 ## Credit
 L.swift is owned and maintained by RECRUIT LIFESTYLE CO., LTD.
